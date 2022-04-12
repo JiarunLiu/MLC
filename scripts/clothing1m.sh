@@ -1,0 +1,11 @@
+python MLC.py \
+  --dir experiment/clothing1m/mlc \
+  --dataset clothing1m \
+  --noise_type clean \
+  --noise 0.0 \
+  --optim Adam \
+  --forget-rate 0.4 \
+  --lambda1 4000 \
+  -j 12 \
+  --backbone resnet18 \
+  --lr 1e-4
